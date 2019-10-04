@@ -8,6 +8,8 @@ body {
     width: 100%;
     height: 100%;
     background-color: blue;
+    font-family: 'Roboto', sans-serif;
+
 }
 /* -------------------- Media Query -------------------- */
 
@@ -26,7 +28,9 @@ body {
     height: 100vh;
     display: block;
     background-image: url(image1.png);
-    background-repeat: cover;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     background-color: black;
 }
 .div_sec {
@@ -50,11 +54,12 @@ body {
     background-color: white;
 }
 .logo_1 {
-    width: 110px;
+    width: 985x;
     height: 50px;
-    margin-top: 60px;
-    margin-left: 60px;
+    margin-top: 30px;
+    margin-left: 50px;
     background: white;
+    border-radius: 5px;
 }
 img {
     width: 100px;
@@ -69,14 +74,27 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: rebeccapurple;
+    
 }
 
 .menu_item {
-    width: 50px;
-    height: 15px;
-    background-color: aquamarine;
+    margin-top: 10px;
+    width: 55px;
+    height: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 3px;
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    
 }
+.menu_center a:hover {
+    border-bottom: 10px solid #00efdf;
+    border-radius: 3px;
+}
+
+
 
 .nav_left {
     width: 40px;
@@ -88,6 +106,31 @@ img {
     align-items: center;
     background-color: white;
 }
+
+.lateral_item_left {
+    position: relative;
+    left: 0px;
+    font-size: 10px;
+    font-weight: 900;
+}
+.scroll {
+    height: 90px;
+    line-height: 60px;
+    transform: rotate(-90deg);
+}
+.arrow {
+    animation-name: color;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+ @keyframes color {
+    0% {transform: translate(0px, -5px)}
+    25% {transform: translate(0px, 5px)}
+    50% {transform: translate(0px, -5px)}
+    75% {transform: translate(0px, 5px)}
+    100% {transform: translate(0px, -5px)}
+}
+
 
 .nav_right {
     width: 40px;
@@ -102,13 +145,12 @@ img {
 }
 .lateral_item_right, .lateral_item_left {
     width: 50px;
-    height: 50px;
-    display: block;
-    background-color: blue;
-}
-.lateral_item_left {
-    position: relative;
-    left: 20px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
 }
 
 .nav_bottom {
@@ -122,6 +164,10 @@ img {
 
 }
 
+/* --------------------  classi del  del Header -------------------- */
+
+
+
 /* --------------------  classi del  delle section -------------------- */
 
 
@@ -134,5 +180,5 @@ img {
     height: 100px;
     display: flex;
     padding-bottom: 200px;
-    background-color: yellow;
+    background-color: whitesmoke;
 }
