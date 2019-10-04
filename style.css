@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+/* -------------------- Media Query -------------------- */
+
+
+/* layout larghezza tra 1024px max  */
+
+/* layout larghezza tra 768px - 980px */
+
+/* layout larghezza tra < 767px */
+
+
+/* -------------------- classi del  div_jumb -------------------- */
+
+.div_jumb {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    background-image: url(image1.png);
+    background-repeat: cover;
+    background-color: black;
+}
+.div_sec {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: rgb(191, 191, 191);
+}
+
+/* --------------------  classi del  delle navbar --------------------  */
+
+.nav_menu {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+.logo_1 {
+    width: 110px;
+    height: 50px;
+    margin-top: 60px;
+    margin-left: 60px;
+    background: white;
+}
+img {
+    width: 100px;
+    height: 50px;
+}
+
+.menu_center {
+    width: 200px;
+    height: 25px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rebeccapurple;
+}
+
+.menu_item {
+    width: 50px;
+    height: 15px;
+    background-color: aquamarine;
+}
+
+.nav_left {
+    width: 40px;
+    height: 100%;
+    position: fixed;
+    left: 0px;
+    z-index: 888;
+    display: flex;
+    align-items: center;
+    background-color: white;
+}
+
+.nav_right {
+    width: 40px;
+    height: 100%;
+    position: fixed;
+    right: 0px;
+    z-index: 777;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+}
+.lateral_item_right, .lateral_item_left {
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: blue;
+}
+.lateral_item_left {
+    position: relative;
+    left: 20px;
+}
+
+.nav_bottom {
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0px;
+    z-index: 999;
+    display: flex;
+    background-color: white;
+
+}
+
+/* --------------------  classi del  delle section -------------------- */
+
+
+
+
+/* --------------------  Classi Footer -------------------- */
+
+.footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding-bottom: 200px;
+    background-color: yellow;
+}
