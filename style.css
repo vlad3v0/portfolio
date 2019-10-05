@@ -177,7 +177,9 @@ img {
     align-items: center;
     border: 1px solid white;
     background: rgb(255, 255, 255);
-   
+    animation-name: transition1;
+    animation-duration: 15s;
+    animation-iteration-count: 2;
 }
 .saluto {
     font-size: 80px;
@@ -189,10 +191,14 @@ img {
 }
 .head:hover {
     background: #00ffe0;
-    transform: translateX( calc(100% / 2));
-    transition-duration: 5s;
 }
-
+@keyframes transition1 {
+    0% {transform: translate(0px)}
+    25% {transform: translate(200px)}
+    50% {transform: translate(0px)}
+    75% {transform: translate(200px)}
+    100% {transform: translate(0px,)}
+}
 
 
 /* --------------------  classi del  delle section -------------------- */
