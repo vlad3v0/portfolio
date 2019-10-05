@@ -25,7 +25,7 @@ body {
 
 .div_jumb {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: block;
     background-image: url(image1.png);
     background-size: cover;
@@ -33,10 +33,16 @@ body {
     background-attachment: fixed;
     background-color: black;
 }
-.div_sec {
+.div_1 {
     width: 100%;
-    height: 100%;
     display: block;
+    border-bottom: 5px solid black; 
+    background-color: rgb(191, 191, 191);
+}
+.div_2 {
+    width: 100%;
+    display: block;
+    border-bottom: 5px solid black; 
     background-color: rgb(191, 191, 191);
 }
 
@@ -54,16 +60,15 @@ body {
     background-color: white;
 }
 .logo_1 {
-    width: 985x;
-    height: 50px;
+    width: 100px;
+    height: 100px;
     margin-top: 30px;
     margin-left: 50px;
-    background: white;
     border-radius: 5px;
 }
 img {
     width: 100px;
-    height: 50px;
+    height: 100px;
 }
 
 .menu_center {
@@ -175,11 +180,11 @@ img {
     left: calc(100% / 6);
     display: flex;
     align-items: center;
-    border: 1px solid white;
+    border: 1px solid black;
     background: rgb(255, 255, 255);
     animation-name: transition1;
-    animation-duration: 15s;
-    animation-iteration-count: 2;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
 }
 .saluto {
     font-size: 80px;
@@ -194,7 +199,7 @@ img {
 }
 @keyframes transition1 {
     0% {transform: translate(0px)}
-    25% {transform: translate(200px)}
+    25% {transform: translate(150px)}
     50% {transform: translate(0px)}
     75% {transform: translate(200px)}
     100% {transform: translate(0px,)}
@@ -203,23 +208,31 @@ img {
 
 /* --------------------  classi del  delle section -------------------- */
 
+/* --------------------  section1 -------------------- */
+
+
 .sec_1 {
     width: 100%;
-    height: 100%;
-    padding: 60px;
-    background: red;
+    height: 700px;
+    padding: 40px;
+    background: white;
     display: flex;
     flex-direction: row;
+    justify-items: center;
+    align-items: center
     
 }
 .section_first {
     width: calc(100% / 2);
     height: 100%;
-    border-top: 5px solid #00ffe0;
+    padding: 40px;
     border-bottom: 5px solid #00ffe0;
-    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
 }
 .section_first h1 {
+    margin: 5px;
     padding: 5px;
     font-size: 90px;
     font-weight: 900;
@@ -230,20 +243,57 @@ img {
     font-size: 30px;
     font-weight: lighter;
 }
-
 .section_second {
     width: calc(100% / 2);
-    height: 100%;
-    background: yellow;
+    height: 400px;
+    margin: 40px;
+    background: black;
+    background-image: url(image5.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+/* --------------------  section2 -------------------- */
+.sec_2 {
+    width: 100%;
+    height: 700px;
+    padding: 40px;
+    background: white;
+    display: flex;
+    flex-direction: row;
+}
+.section_second_div2 {
+    width: calc(100% / 2);
+    height: 400px;
+    margin: 40px;
+    background: black;
+    background-image: url(image5.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 
 /* --------------------  Classi Footer -------------------- */
 
 .footer {
+    display: block;
     width: 100%;
-    height: 100px;
+    height: 150px;
+    background: white;
+}
+.div_footer {
+    width: 100%;
+    height: 80px;
+    padding: 20px;
     display: flex;
-    padding-bottom: 200px;
-    background-color: whitesmoke;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.div_footer span {
+    width: 400px;
+    height: 50px;
+    padding: 30px;
+    text-align: center;
 }
